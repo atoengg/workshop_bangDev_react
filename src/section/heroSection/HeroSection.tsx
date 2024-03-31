@@ -4,13 +4,13 @@ import { imgHero } from "../../image";
 const HeroSection = () => {
   return (
     <>
-      <section id="hero" className="w-full h-screen pt-32 bg-[#fff8ea]">
-        <div className="px-10 h-full">
-          <div className="flex flex-row justify-center items-center">
+      <section id="hero" className="w-full h-screen pt-32 bg-orange-50">
+        <div className="px-28 h-full">
+          <div className="flex flex-row justify-center items-center px-8">
             <div className="w-1/2">
-              <h1 className="text-[#1f1235] text-[45px] font-bold leading-[72px] mb-4">
+              <h1 className="text-black text-[45px] font-bold leading-[72px] mb-4">
                 Menikmati Cafe Keren Seharga Warkop
-                <span className="text-[#ff6e6c]">.</span>
+                <span className="text-orange-500">.</span>
               </h1>
               <p>
                 Lagi nyari cafe di Gresik yang tempatnya minimalis tapi tetap
@@ -22,13 +22,13 @@ const HeroSection = () => {
               </p>
               <Button
                 className={
-                  "w-[250px] h-[70px] bg-[#ff6e6c] text-[#f3fff4] font-bold rounded-md mt-6"
+                  "bg-orange-500 text-white font-bold rounded-lg px-6 py-3 mt-4 hover:bg-white hover:text-orange-500 transition duration-300"
                 }
-                label={"Jelajahi"}
+                label={"Pesan Sekarang"}
               />
             </div>
-            <div className="w-1/2">
-              <img src={imgHero} alt="" />
+            <div className="w-1/2 flex justify-end">
+              <img src={imgHero} className="rounded-3xl ml-24" width={350} alt="" />
             </div>
           </div>
         </div>

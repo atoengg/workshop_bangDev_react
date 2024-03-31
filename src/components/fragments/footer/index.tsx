@@ -12,9 +12,9 @@ import Button from "../../elements/button/Button";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f1235] mt-0 py-[50px] px-0 text-[#f3fff4]">
-      <div className="container mx-auto px-8 md:px-6 max-w-full">
-        <div className="grid gap-16 row-gap-10 lg:grid-cols-6">
+    <footer className="bg-white mt-0 py-[50px] px-0 text-black">
+      <div className="container mx-auto px-10 md:px-24 max-w-full">
+        <div className="grid gap-14 row-gap-4 lg:grid-cols-6">
           <div className="md:max-w-sm lg:col-span-2">
             <div className="flex items-center">
               <img
@@ -33,7 +33,7 @@ const Footer = () => {
                 href="https://www.google.com/maps/place/HOLAA+CAFE/@-6.8973909,112.457595,14z/data=!4m15!1m8!3m7!1s0x2e77e7f770a22f0b:0x31eaa2816904dacd!2sHOLAA+CAFE!8m2!3d-6.8972521!4d112.4643102!10e1!16s%2Fg%2F11q4h8dh2n!3m5!1s0x2e77e7f770a22f0b:0x31eaa2816904dacd!8m2!3d-6.8972521!4d112.4643102!16s%2Fg%2F11q4h8dh2n?entry=ttu"
                 className="text-sm font-[300]"
               >
-                Mulyorejo, Dalegan, Kec. Panceng, Kabupaten Gresik, Jawa Timur
+                Mulyorejo, Dalegan, Kec. Panceng, Kab. Gresik, Jawa Timur
               </a>
             </div>
 
@@ -110,11 +110,11 @@ const Footer = () => {
                   name="subscribe"
                   id="subscribe"
                   placeholder="masukan alamat email anda"
-                  className="w-full bg-transparent rounded-full border border-solid text-xs py-2 px-4 mr-2"
+                  className="w-full bg-white rounded-full border border-solid text-xs py-2 px-4 mr-2"
                 />
                 <Button
                   className={
-                    "bg-red-500 p-2 rounded-full flex items-center justify-center text-white"
+                    "bg-white p-2 rounded-full flex items-center justify-center text-orange-500"
                   }
                   label={<BsSend />}
                 />
