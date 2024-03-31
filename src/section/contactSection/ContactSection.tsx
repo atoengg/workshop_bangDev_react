@@ -1,50 +1,57 @@
-// import React, { useState } from 'react';
+import Button from "../../components/elements/button/Button";
+import Label from "../../components/elements/label";
+import Input from "../../components/fragments/input";
 
 const ContactSection = () => {
   return (
-    <div className="bg-orange-50 py-12">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-black mb-6 text-center">Hubungi Kami</h2>
-        <div className="bg-white rounded-3xl shadow-lg p-6">
-          <form>
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-lg font-medium text-black mb-2">Nama</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-500"
-                placeholder="Masukkan nama Anda"
-                required
+    <section id="kontak">
+      <div className="bg-orange-50 py-12">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-black mb-6 text-center">
+            Hubungi Kami
+          </h2>
+          <div className="bg-white rounded-3xl shadow-lg p-6">
+            <form>
+              <div className="mb-4">
+                <Input
+                  label={"Nama"}
+                  name={"name"}
+                  placeholder={"masukan nama anda"}
+                  type={"text"}
+                />
+              </div>
+              <div className="mb-4">
+                <Input
+                  label={"Email"}
+                  name={"email"}
+                  placeholder={"Masukkan alamat email Anda"}
+                  type={"email"}
+                />
+              </div>
+              <div className="mb-6">
+                <Label htmlFor={"message"} label={"Pesan"} />
+                <textarea
+                  id="message"
+                  name="message"
+                  className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-500"
+                  rows={4}
+                  placeholder="Tuliskan pesan Anda di sini"
+                  required
+                ></textarea>
+              </div>
+
+              <Button
+                className={
+                  "bg-orange-500 text-white w-full px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition duration-300"
+                }
+                label={"Kirim Pesan"}
+                type={"submit"}
               />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-lg font-medium text-black mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-500"
-                placeholder="Masukkan alamat email Anda"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="message" className="block text-lg font-medium text-black mb-2">Pesan</label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-orange-500"
-                rows={4}
-                placeholder="Tuliskan pesan Anda di sini"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" className="bg-orange-500 text-white w-full px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition duration-300">Kirim Pesan</button>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
