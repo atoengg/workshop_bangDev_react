@@ -1,7 +1,15 @@
-// import React from "react";
+import Layout from "../../components/layout";
+
+import HeroSection from "../../section/heroSection/HeroSection";
 
 const LandingPage = () => {
-  return <div>ini halaman LandingPage</div>;
+  return (
+    <>
+      <Layout>
+        <HeroSection />
+      </Layout>
+    </>
+  );
 };
 
 export default LandingPage;
