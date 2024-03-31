@@ -1,7 +1,7 @@
 // import React from "react";
 
-const Home = () => {
-  return <div>ini halaman Home</div>;
+const LandingPage = () => {
+  return <div>ini halaman LandingPage</div>;
 };
 
-export default Home;
+export default LandingPage;
