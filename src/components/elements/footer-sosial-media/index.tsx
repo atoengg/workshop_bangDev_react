@@ -10,7 +10,7 @@ const SosialMediaFooter = ({ patch, logo }: SosialMediaFooterProps) => {
     <>
       <Link
         to={patch}
-        className="flex items-center justify-center w-9 h-9 border border-solid border-[#f3fff4] rounded-[50%] mr-2"
+        className="flex items-center justify-center w-9 h-9 border border-solid border-black rounded-[50%] mr-2"
       >
         <span>{logo}</span>
       </Link>

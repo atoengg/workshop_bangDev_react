@@ -110,11 +110,11 @@ const Footer = () => {
                   name="subscribe"
                   id="subscribe"
                   placeholder="masukan alamat email anda"
-                  className="w-full bg-white rounded-full border border-solid text-xs py-2 px-4 mr-2"
+                  className="w-full bg-white rounded-full border border-solid border-black text-xs py-2 px-4 mr-2"
                 />
                 <Button
                   className={
-                    "bg-white p-2 rounded-full flex items-center justify-center text-orange-500"
+                    "bg-black p-2 rounded-full flex items-center justify-center text-white"
                   }
                   label={<BsSend />}
                 />
