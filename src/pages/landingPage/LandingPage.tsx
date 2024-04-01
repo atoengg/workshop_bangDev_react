@@ -4,6 +4,7 @@ import CallToActionSection from "../../section/callToActionSection/CallToActionS
 import ContactSection from "../../section/contactSection/ContactSection";
 
 import HeroSection from "../../section/heroSection/HeroSection";
+import ProductsSection from "../../section/productsSection/ProductsSection";
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
         <HeroSection />
         <AboutSection />
         <CallToActionSection />
+        <ProductsSection />
         <ContactSection />
       </Layout>
     </>
