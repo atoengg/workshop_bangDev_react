@@ -4,7 +4,7 @@ import { imgHero } from "../../image";
 const HeroSection = () => {
   return (
     <>
-      <section id="hero" className="w-full h-screen pt-32 bg-orange-50">
+      <section id="beranda" className="w-full h-screen pt-32 bg-orange-50">
         <div className="px-28 h-full">
           <div className="flex flex-row justify-center items-center px-8">
             <div className="w-1/2">
@@ -21,6 +21,7 @@ const HeroSection = () => {
                 cafe ini.
               </p>
               <Button
+                type={"button"}
                 className={
                   "bg-orange-500 text-white font-bold rounded-lg px-6 py-3 mt-4 hover:bg-white hover:text-orange-500 transition duration-300"
                 }
@@ -28,7 +29,12 @@ const HeroSection = () => {
               />
             </div>
             <div className="w-1/2 flex justify-end">
-              <img src={imgHero} className="rounded-3xl ml-24" width={350} alt="" />
+              <img
+                src={imgHero}
+                className="rounded-3xl ml-24"
+                width={350}
+                alt=""
+              />
             </div>
           </div>
         </div>
